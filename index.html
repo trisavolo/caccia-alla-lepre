@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Email</title>
+    <style>
+        /* Style for the clickable button */
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h2 {
+            color: white;
+            background-color: red;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            font-family: sans-serif;
+        }
+    </style>
+    <script>
+        function sendEmail() {
+            // Define the mailto link
+            var mailtoLink = 'mailto:info@maxmarafashiongroup.com?cc=proffice@maxmara.it,servizioclienti@intrend.it,maramotti.l@maxmara.it,lipsky.k@maxmara.de,administration@maxmara.lu,baldino.m@usa.maxmara.com,ferretti.e@maxmara.it,gaini.a@maxmara.it,laurenzi.m@maxmara.it,chiesi.m@maxmara.it,lusuardi.l@maxmara.it,bozzola.s@maxmara.de&subject=Fur-Free%20Policy&body=Hello.%0A%0AI%20am%20deeply%20saddened%20to%20see%20that%20a%20fashion%20group%20as%20prestigious%20as%20the%20Max%20Mara%20Fashion%20Group%20still%20allows%20the%20use%20and%20sale%20of%20fur%20to%20their%20companies.%0A%0AThe%20fur%20industry%20is%20not%20only%20cruel%20and%20unnecessary%2C%20but%20also%20outdated%20in%20today\'s%20and%20tomorrow\'s%20fashion%20scene.%0A%0AI%20am%20writing%20to%20ask%20you%20to%20ban%20the%20use%20of%20fur%20within%20your%20group%2C%20and%20declare%20a%20fur-free%20policy%2C%20as%20many%20other%20companies%20have%20already%20done.';
+
+            // Open the mailto link in a new window or tab
+            window.open(mailtoLink, '_blank');
+        }
+    </script>
+</head>
+<body>
+
+    <h2 onclick="sendEmail()">
+        SEND EMAIL
+    </h2>
+
+</body>
+</html>
